@@ -5,4 +5,4 @@
 - клонируем репозиторий командой git clone https://github.com/JaiMie1303/scan-project.git
 - переходим в папку cd scan-project
 - устанавливаем зависимости командой npm i
-- зпускаем проект командо npm start
+- запускаем проект командо npm start
