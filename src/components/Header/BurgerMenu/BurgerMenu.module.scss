@@ -1,0 +1,128 @@
+@import '../../../styles//common.module.scss';
+
+.burgerOpenButton {
+  display: none;
+}
+
+@media all and (max-width: 948px) {
+  .burgerOpenButton {
+    display: flex;
+    background-image: url(../../../assets/img/burger/openBtn.svg);
+    width: 30px;
+    height: 25px;
+    margin-top: 30px;
+  }
+
+  .burgerCloseButton {
+    background-image: url(../../../assets/img/burger/closeBtn.svg);
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .burgerMenu {
+    padding: 0 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $mainColor;
+    z-index: 3;
+  }
+
+  .burgerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .burgerLogo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .burgerNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burgerNavLink {
+    color: $fontWhite;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    margin-bottom: 26px;
+  }
+
+  .notSignedIn {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signupButton {
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: $fontWhite;
+    font-weight: 300;
+    opacity: $opacity;
+  }
+
+  .signinButton {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-decoration: none;
+    color: $fontColor;
+    background-color: $btnColor;
+    width: 90%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .userDetails {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userAvatar {
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+  }
+
+  .userName {
+    font-size: 22px;
+    color: $fontWhite;
+    letter-spacing: 0.08rem;
+  }
+
+  .logoutButton {
+    border: none;
+    font-weight: 300;
+    font-size: 16px;
+    background: transparent;
+    opacity: 0.6;
+    
+    & a {
+      text-decoration: none;
+      color: $fontWhite;
+    }
+  }
+}
+
+@media (max-width: 948px) {
+  .burgerOpenButton {
+    margin: 31px 31px 34px 25px;
+  }
+}

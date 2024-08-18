@@ -1,0 +1,173 @@
+@import '../../../styles/common.module.scss';
+
+.summarySlider {
+    margin: 70px;
+
+    h2 {
+        font-family: $fontFerry;
+        font-size: 30px;
+        margin: 17px 0;
+    }
+
+    p {
+        font-size: 18px;
+        opacity: $opacity;
+    }
+}
+
+.slider-data {
+    border-radius: 0px 10px 10px 0px;
+    border: 2px solid $mainColor;
+    height: 160px;
+    margin: 30px 0px 30px 113px;
+    width: 90%;
+    margin-top: 26px;
+}
+
+.slide-data {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-right: 2px #c2c2c2 solid;
+    text-align: center;
+    margin: 18px;
+    flex: 1;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider-content {
+    width: 100%; 
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.header-cell {
+    position: absolute;
+    font-size: 18px;
+    background-color: $mainColor;
+    color: $fontWhite;
+    height: 160px;
+    width: 133px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.name-cell {
+    padding: 9px 15px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.cell {
+    text-align: center;
+    padding: 5px 15px;
+    margin-bottom: 10px; 
+}
+
+@media (max-width: 980px) {
+    .slider-data {
+        width: 80%;
+    }
+}
+
+@media (max-width: 463px) {
+    .slider-container {
+        display: flex;
+        flex-direction: column;
+        position: unset;
+    }
+
+    .header-cell,
+    .slider-data {
+        position: static;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .header-cell {
+        height: 80px;
+    }
+
+
+    .slider-data {
+        border: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 10px 10px;
+        display: flex;
+        flex-direction: row; 
+        height: 65px;
+    }
+
+    .header-cell {
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        border: 2px solid $mainColor;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+
+    
+    .slide-data {
+        border-right: 2px #c2c2c2 solid;
+        text-align: center;
+        margin: 0; 
+        }
+    
+
+    .cell {
+        display: inline-flex;
+        text-align: center;
+        padding: 5px; 
+        flex: 1; 
+        width: auto; 
+        margin-right: 50px;
+        margin-top: 17px;
+        }
+    }
+
+    .name-cell {
+        font-size: 16px;
+    }
+
+@media (max-width: 520px) {
+    .summarySlider h2 {
+        font-size: 28px;
+    }
+
+    .summarySlider {
+        margin-left: 14px;
+    }
+}
+
+@media (max-width: 463px) {
+
+    .slider-container {
+        margin-top: 34px;
+    }
+
+    .cell {
+        margin-left: 0;
+    }
+
+    .header-cell {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .summarySlider {
+        margin-left: 16px;
+    }
+}

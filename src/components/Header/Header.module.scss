@@ -1,0 +1,170 @@
+@import '../../styles/common.module.scss';
+
+.header {
+    display: flex;
+    padding: 0 5%;
+}
+
+.container {
+    max-height: 93px;
+    width: 100%;
+}
+
+.header__row {
+    display: flex;
+    column-gap: 49px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    max-width: 141px;
+    max-height: 141px;
+    margin: 0 auto;
+}
+
+.header__nav {
+    font-size: 14px;
+    line-height: 1.5px;
+    letter-spacing: 0.01em;
+}
+
+.header__nav ul {
+    display: flex;
+    column-gap: 49px;
+    align-items: center;
+}
+
+
+.header__nav a {
+    color: $fontColor;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.register-button {
+    margin: 0 auto;
+    color: $fontColor;
+    opacity: $opacity;
+    line-height: 17px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 26px; 
+    background-color: $mainColor; 
+    margin: 0 20px; 
+}
+
+.login-button {
+    border-radius: 5px;
+    background-color: $btnColor;
+    padding: 5px 12px;
+    color: $fontColor;
+    margin-right: 60px;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    margin-left: 4px;
+}
+
+.account-info {
+    background-color: rgba(217, 217, 217, 0.2);
+    border: 1px solid $fontWhite; 
+    padding: 15px; 
+    margin: 10px 0; 
+    display: flex; 
+    flex-direction: column; 
+    text-align: right;
+    font-size: 10px;
+    border-radius: 5px; 
+    width: 175px;
+    height: auto;
+  }
+
+.user-name {
+    font-size: 14px;
+}
+
+.logout-button {
+    font-size: 10px;
+    opacity: $opacity;
+    color: #000000;
+    margin-right: -30px;
+    margin-top: 3px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 128px;
+}
+
+.used-count {
+    color: $fontColor;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+.limit-count {
+    color: #8AC540;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.label {
+    color: rgba(51, 51, 51, 0.5);
+}
+
+
+@media (max-width: 948px) {
+    .register-button, .vertical-line, .login-button, .user-info, .profile-img {
+      display: none;
+
+    }
+  }
+
+@media (max-width: 763px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+@media (max-width: 461px) {
+    .header__logo img {
+        max-width: 111px;
+        max-height: 111px;
+    }
+    .account-info {
+        width: 132px;
+        text-align: left;
+        padding: 5px;
+    }
+
+    .header__row {
+        column-gap: 31px;
+    }
+
+    .label {
+        font-size: 8px;
+        margin-right: 31px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+}
+
+
+

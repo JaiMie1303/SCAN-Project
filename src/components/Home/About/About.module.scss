@@ -1,0 +1,42 @@
+@import '../../../styles/common.module.scss';
+.image-text-container {
+    max-width: 1346px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-text-container h1 {
+    font-family: $fontFerry;
+    font-size: 45px;
+    margin: 50px 10px;    
+}
+
+.image-container {
+    max-width: 1307px;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    padding-top: 70px;
+}
+
+.img {
+    width: 100%;
+}
+
+@media (max-width: 1360px) {
+    .img {
+        margin: 20px;
+    }
+    .image-text-container h1 {
+        margin: 35px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-text-container h1 {
+        font-size: 28px;
+        margin-left: 14px;
+    }
+}
+

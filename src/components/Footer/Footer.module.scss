@@ -1,0 +1,48 @@
+@import '../../styles/common.module.scss';
+
+.footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: center;
+    background-color: $mainColor; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    align-items: center;  
+    width: 100%;
+    min-height: 137px;
+}
+
+.footer-text {
+    flex-grow: 1;
+    text-align: right;
+    color: $fontWhite;
+    font-size: 14px;
+    font-weight: 100; 
+    letter-spacing: 0.02em;
+}
+
+.footer-icon img {
+    width: 141px; 
+    height: auto;
+}
+
+.footer-rights {
+    text-align: right;  
+    font-size: 12px; 
+    font-weight: 100; 
+    margin-top: 21px;
+}
+
+@media all and (max-width: 550px) {
+    .footer {
+      padding: 10px;
+    }
+  }

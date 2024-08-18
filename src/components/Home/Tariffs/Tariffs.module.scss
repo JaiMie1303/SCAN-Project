@@ -1,0 +1,201 @@
+@import '../../../styles/common.module.scss';
+
+.tariffs-container {
+    margin: 107px 60px 0; 
+}
+
+
+.tariffs-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    align-items: center;
+
+    @media (max-width: 1344px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+      
+    
+      @media (max-width: 1024px) {
+        width: 90%; 
+        margin-bottom: 20px; 
+      }
+}
+
+.tariff-card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 30%;
+    height: 507px;
+
+    @media (max-width: 1446px) {
+        width: 45%; 
+        margin-bottom: 20px; 
+        margin-right: 37px;
+      }
+
+      @media (max-width: 1423px) {
+        width: 40%;
+        margin-right: 20px;
+      }
+
+      @media (max-width: 1372px) {
+        width: 35%;
+        margin-right: 15px;
+      }
+
+      @media (max-width: 1360px) {
+        width: 40%;
+        margin-right: 10px;
+      }
+
+      @media (max-width: 1114px) {
+        width: 50%;
+      }
+
+      @media (max-width: 1008px) {
+        width: 65%;
+      }
+
+      @media (max-width:800px) {
+        width: 90%;
+      }
+
+      @media (max-width:612px) {
+        width: 100%;
+        height: auto;
+        
+      }
+}
+
+.tariff-header {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.header-content {
+    display: flex;                     
+    justify-content: space-between;     
+    align-items: center;  
+    padding: 30px 6px 30px 20px;
+    height: 132px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 25px;
+}
+
+.header-image {
+    max-width: 100%;  
+    height: auto;                     
+}
+.header-of-tariffs h1 {
+    font-family: $fontFerry;
+    font-size: 45px;
+}
+
+.tariff-title {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+.tariff-description {
+    font-family: "Inter";
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+.content {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.installment {
+    font-size: 18px;
+}
+
+.old-price {
+    font-size: 25px;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+.content__title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: medium;
+    font-weight: 500;
+    text-align: left;
+}
+
+.feature-item {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.details-button {
+    background-color: $backBtn;
+    color: $fontWhite;
+    font-size: 20px;
+    border-radius: 5px;
+    width: calc(100% - 55px); 
+    height: 59px;
+    margin: 40px auto; 
+    display: block; 
+    text-align: center;
+
+    &.current {
+        background-color: #D2D2D2; 
+        color: $fontColor;
+    }
+}
+
+.current-tariff {
+    font-size: 14px;
+    color:$fontWhite;
+    background-color: #3BA5E0;
+    border-radius: 10px;
+    padding: 3px 13px 4px 13px;
+    display: inline-block;
+    max-width: 134px;
+    margin-left: auto; 
+    margin-right: 10px;
+    margin-top: -20px;
+    
+}
+
+@media (max-width: 530px) {
+  .header-of-tariffs h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tariffs-container {
+    margin-left: 14px;
+  }
+  .tariffs-list {
+    margin-top: 37px;
+    width: 100%;
+    height: auto;
+    margin-left: 30px;
+  }
+  .tariff-title {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+

@@ -1,0 +1,323 @@
+@import '../../../styles/common.module.scss';
+
+.login-page {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: $fontWhite;
+    min-height: calc(100vh - 234px);
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: $fontFerry;
+    font-size: 29px;
+    margin: 69px 0px 14px 60px;
+}
+
+.left-side h2 {
+    margin-left: 0;
+}
+
+.auth-image {
+    margin-top: 20px;
+    margin-left: 15%;
+    max-width: 100%;
+    max-height: 342px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 429px;
+    width: 100%;
+    max-height: 523px;
+    background-color: $fontWhite;
+    padding: 25px 25px 39px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 69px;
+    margin-right: 125px;
+}
+
+.lock-icon {
+    width: 75px;
+    height: 92px;
+    margin-right: -30px;
+    margin-top: 14px;
+    z-index: 2;
+}
+
+.social-login {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    max-width: 96px;
+    max-height: 31px;
+}
+
+.social-login .social-icon {
+    margin: 0 10px;
+}
+
+.social-login .social-icon:first-child {
+    margin-left: 0;
+}
+
+.social-login .social-icon:last-child {
+    margin-right: 0;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.submit-button {
+    color: $mainColor;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0px 0px 8px 52px;
+}
+
+.img-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-button {
+    color: $borderSolid;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0px 0px 8px 32px;
+}
+
+.submit-line {
+    height: 2px;
+    background-color: $mainColor;
+    width: 151px;
+}
+
+.register-line {
+    height: 2px;
+    background-color: $borderSolid;
+    width: 213px;
+}
+
+.submit-button:hover {
+    background-color: $sbmtHover;
+}
+
+.register-button:hover {
+    background-color: $sbmtHover;
+}
+
+.button-accept {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $backBtn;
+    color: $fontWhite;
+    border-radius: 5px;
+    padding: 16px 156px;
+    opacity: $opacity;
+    font-size: 22px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.button-accept:hover {
+    background-color: #4a66d4;
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button-accept:active {
+    background-color: #4058b5;
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-login {
+    font-size: 16px;
+    opacity: $opacity;
+}
+
+.user-password {
+    font-size: 16px;
+    opacity: $opacity;
+}
+
+.login-input, .password-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 379px;
+    width: 100%;
+    height: 43px;
+}
+
+.restore-link-button {
+    text-decoration: underline;
+    color: $backBtn;
+}
+.restore-password {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.enter-social {
+    margin-top: 30px;
+    font-size: 16px;
+    opacity: 0.4;
+}
+
+.error-message {
+    color: $errorColor;
+    text-align: center;
+    font-size: 14px;
+    transition: opacity 0.2s ease;
+    margin-top: -15px;
+}
+
+.errorInput {
+    border: 1px solid $errorColor;
+    background-color: #ffe6e6;
+}
+
+@media (max-width: 1057px) {
+    .login-page {
+        flex-direction: column;
+    }
+
+    .left-side h2 {
+        order: 1; 
+        font-size: 32px;
+    }
+
+    .lock-icon {
+        order: 2;
+        align-self: center;
+        margin: 45px 0px -30px -100px;
+    }
+
+    .login-form {
+        order: 3; 
+        font-family: "Inter";
+        padding: 15px 20px;
+        margin: 0;
+        align-self: center;
+        width: 90%; 
+        margin: 20px auto;
+    }
+
+    .left-side .auth-image {
+        order: 4; 
+        align-self: center;
+    }
+
+    .restore-link-button {
+        font-size: 14px;
+    }
+
+    .buttons-wrapper {
+        margin: 0;
+    }
+}
+
+@media (max-width: 676px) {
+    .left-side h2 {
+        font-size: 22px;
+    }
+
+    .login-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .submit-line {
+        width: 130px;
+    }
+    .register-line {
+        width: 173px;
+    }
+    .submit-button {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .register-button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 513px) {
+    .login-form {
+        width: 100%;
+        margin-left: -30px;
+    }
+
+    .social-login .social-icon {
+        margin: 0 5px; 
+    }
+
+    .submit-line {
+        width: 100px;
+    }
+
+    .register-line {
+        width: 180px;
+    }
+
+    .button-accept {
+        padding: 10px 115px;
+    }
+
+    .left-side {
+        margin: 20px 45px;
+    }
+
+    .social-login {
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .auth-image {
+        margin-left: -30px;
+    }
+
+    .lock-icon {
+        display: block;
+        margin: 45px 0px -30px -100px; 
+        z-index: 1;
+    }
+
+}
+
+
+
+
+

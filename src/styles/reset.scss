@@ -1,0 +1,40 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	box-sizing: border-box;
+}
+
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+button {
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+  }
+
+ul, ul li {
+	list-style: none;
+}
+
+
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+
+label {
+	cursor: pointer;
+}

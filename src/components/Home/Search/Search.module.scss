@@ -1,0 +1,129 @@
+@import '../../../styles/common.module.scss';
+
+.search-container {
+    text-align: center;
+    margin: 0 60px;
+  }
+  
+  .search-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .text-container {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .text-container h2 {
+    font-family: $fontFerry;
+    font-size: 55px;
+    line-height: 1.2;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    line-height: 24px;
+    margin: 30px 0;
+    max-width: 72%;
+  }
+  
+.button-search {
+    display: inline-block;
+    width: 50%;
+    height: 60px;
+    background-color: $backBtn;
+    color: $fontWhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .button-search:hover {
+    background-color: #0056b3; 
+}
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: right;
+    max-width: 629px;
+    max-height: 620px;
+    margin-bottom: 107px;
+  }
+  
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 24px;
+  }
+
+  @media (max-width: 1399px) {
+    .text-container h2 {
+      font-size: 45px;
+    }
+    .text-container p {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 1185px) {
+    .text-container h2 {
+      font-size: 35px;
+    }
+    .text-container p {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 948px) {
+    .text-container h2 {
+      font-size: 25px;
+    }
+    .text-container p {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 711px) {
+    .search-content {
+      flex-direction: column;
+    }
+   
+    .text-container h2 {
+      font-size: 28px;
+      margin: 0 auto;
+    }
+    .text-container p {
+      font-size: 18px;
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 586px) {
+    .search-container {
+      margin: 0 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .button-search {
+      width: 335px;
+      margin: 0;
+    }
+    .image-container {
+      margin: 0;
+    }
+    .image-container img {
+      margin: 0;
+    }
+  }

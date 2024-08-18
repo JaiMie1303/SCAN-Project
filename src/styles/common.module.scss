@@ -1,0 +1,27 @@
+
+$fontColor: #000000;
+$fontWhite: #FFFFFF;
+$fontW: 400;
+$backBtn: #5970FF;
+$btnColor: #7CE3E1;
+$mainColor: #029491;
+$borderSolid: #C7C7C7;
+$errorColor: #FF0000;
+$sbmtHover: #ece7e7;
+$fontFerry: 'Ferry';
+$opacity: 0.4;
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-weight: $fontW;
+    color: $fontColor;
+    height: 100vh;
+    width: 100%; 
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
